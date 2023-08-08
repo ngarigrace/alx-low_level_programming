@@ -56,7 +56,7 @@ char **strtow(char *str)
 					return (NULL);
 				while (start < end)
 					*t++ = str[start++];
-				t = '\0';
+				*t = '\0';
 				m[k] = t - c;
 				k++;
 				c = 0;
