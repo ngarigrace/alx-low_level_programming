@@ -62,8 +62,8 @@ int main(int argc, char *argv[])
 	leng2 = _strlen(s2);
 	leng = leng1 + leng2 + 1;
 	result = malloc(sizeof(int) * leng);
-	if (!result)
-		return (1);
+		if (!result)
+			return (1);
 	for (a = 0; a <= leng1 + leng2; a++)
 		result[a] = 0;
 	for (leng1 = leng1 - 1; leng1 >= 0; leng1--)
@@ -78,7 +78,7 @@ int main(int argc, char *argv[])
 			carry /= 10;
 		}
 		if (carry > 0)
-			result[leng1 + leng2] += carry;
+			result[leng1 + leng2 + 1] += carry;
 	}
 	for (a = 0; a < leng - 1; a++)
 	{
