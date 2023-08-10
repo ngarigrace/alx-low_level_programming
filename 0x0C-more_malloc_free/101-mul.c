@@ -3,6 +3,7 @@
 #include <stdio.h>
 
 #define ERR_MSG "Error"
+
 /**
   *is_digit - check if a str contains a non digit char
   *@s: str to be evaluated
@@ -69,7 +70,7 @@ int main(int argc, char *argv[])
 	{
 		digit1 = s1[leng1] - '0';
 		carry = 0;
-		for (leng2 = leng2 - 1; leng2 >= 0; leng--)
+		for (leng2 = _strlen(s2) - 1; leng2 >= 0; leng2--)
 		{
 			digit2 = s2[leng2] - '0';
 			carry += result[leng1 + leng2 + 1] + (digit1 * digit2);
