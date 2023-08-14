@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include"dog.h"
+#include "dog.h"
 /**
   *new_dog - function that creates a new dog
   *@name: new dogs name
@@ -9,7 +9,7 @@
   */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	unsigned int n1, a, o1;
+	unsigned int n1, o1, a;
 	dog_t *dog;
 
 	if (name == NULL || owner == NULL)
