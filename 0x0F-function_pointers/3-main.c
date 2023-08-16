@@ -7,7 +7,7 @@
   *@argv: arg vector
   *Return: results of cal func operation
   */
-int main(int argc, char *argv[])
+int main(int __attribute__((unused)) argc, char *argv[])
 {
 	char *op;
 	int x, y;
