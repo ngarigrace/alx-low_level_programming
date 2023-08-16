@@ -22,7 +22,7 @@ int (*get_op_func(char *s))(int, int)
 	/* initialize i*/
 	i = 0;
 	/* s does'nt match any of ops */
-	while (ops[1].op != NULL && *(ops[i].op) != *s)
+	while (ops[i].op != NULL && *(ops[i].op) != *s)
 		i++;
 	return (ops[i].f); /* ret operation */
 }
